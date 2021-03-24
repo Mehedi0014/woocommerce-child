@@ -1,28 +1,16 @@
 /*
- Theme Name:	desing_world Child
+ Theme Name:	mOne Child
  Theme URI:		http://underscores.me/
- Description:	desing_world Child Theme
+ Description:	mOne Child Theme
  Author:		Md. Mehedi Hassan
  Author URI:	https://www.facebook.com/mehedi0013/
- Template:		desing_world
+ Template:		mone
  Version:		1.0.0
 */
 
 /* ==============================================================================
 	Global Section
 ============================================================================== */
-body a:hover {
-	text-decoration: none;
-}
-
-u, ins {
-	text-decoration: none;
-}
-
-
-
-
-
 
 /* Hide some defautl section ================================== */
 #post-9 .woocommerce-info,
@@ -180,19 +168,11 @@ form.cart {
 #primarySingleProductPage .detailsPart .price del span.woocommerce-Price-amount.amount {
 	color: #aeadad;
 	padding-right: 9px;
+	font-size: 25px;
 }
 
 #primarySingleProductPage .detailsPart .price ins {
 	text-decoration: none;
-}
-
-#primarySingleProductPage .detailsPart .price ins::before {
-	content:"\f178";
-	font-family: fontAwesome;
-	padding-right: 9px;
-	color: #ba0000 !important;
-	font-size: 25px;
-	font-weight: normal;
 }
 
 /* categories and tag design in single page =============================================== */
@@ -217,6 +197,14 @@ form.cart {
 		flex-direction: row;
 		justify-content: space-around;
 	}
+}
+
+#relatedProductsWrapper section > ul.products li.product img {
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 12px;
 }
 
 /* ====================================================================================
@@ -273,11 +261,6 @@ table.variations > tbody > tr > td.label label {
 	All places where products show like: shop, archive, related product etc.
 ============================================================================== */
 
-ul.productsWrapper li.productsListRow .archiveImagePart img {
-	width: 100%;
-	height: auto;
-}
-
 ul.productsWrapper .product h2 {
 	display: block;
 	font-size: 17px;
@@ -290,19 +273,32 @@ ul.productsWrapper .product h2 {
 	color: #333;
 }
 
-ul.productsWrapper li.productsListRow .archiveProductSummery .woocommerce-product-details__short-description {
+@media (min-width: 48em){
+	ul.productsWrapper li.productsListRow {
+		margin: 0 auto;
+	}
+}
+
+ul.productsWrapper li.productsListRow .woocommerce-product-details__short-description {
 	font-size: 15px;
 	color: #666;
 }
 
-ul.productsWrapper li.productsListRow .archiveImagePart {
+ul.productsWrapper li.productsListRow .price {
+	font-size: 20px;
+	font-weight: bold;
+	color: #862d2f;
+	margin-bottom: 14px;
+}
+
+ul.productsWrapper li.productsListRow img {
 	border: 1px solid #F1F1F1;
 	padding: 4px;
 	border-radius: 6px;
 	position: relative;
 }
 
-ul.productsWrapper li.productsListRow .archiveImagePart .onsale {
+ul.productsWrapper li.productsListRow > a.woocommerce-LoopProduct-link .onsale {
 	position: absolute;
 	top: 5px;
 	left: 5px;
@@ -315,20 +311,6 @@ ul.productsWrapper li.productsListRow .archiveImagePart .onsale {
 	background-color: green;
 	border-radius: 50%;
 	font-weight: bold;
-}
-
-
-
-
-
-
-
-
-ul.productsWrapper li.productsListRow .archiveProductSummery .price {
-	font-size: 20px;
-	font-weight: bold;
-	color: #862d2f;
-	margin-bottom: 14px;
 }
 
 ul.productsWrapper li.productsListRow .archiveAddToCart {
@@ -356,26 +338,25 @@ ul.productsWrapper li.productsListRow .archiveAddToCart a.added_to_cart.wc-forwa
 	left: 50%;
 	transform: translateX(-50%);
 	color: #fff;
-	background: #230f84;
+	background: #461415;
 	font-weight: bold;
-	padding: 6px 29px;
-	top: -6px;
+	padding: 4px 20px;
+	top: -3px;
 	border-radius: 50px;
 }
 
-ul.productsWrapper li.productsListRow .archiveProductSummery .price del .woocommerce-Price-amount.amount {
+ul.productsWrapper li.productsListRow .price del {
+	margin-right: 10px;
+}
+
+ul.productsWrapper li.productsListRow .price ins {
+	text-decoration: none;
+}
+
+ul.productsWrapper li.productsListRow .price del .woocommerce-Price-amount.amount {
 	color: #461415;
 	opacity: .5;
 }
-
-ul.productsWrapper li.productsListRow .archiveProductSummery .price del::after {
-	content:"\f061";
-	font-family: fontAwesome;
-	margin: 0 10px;
-	opacity: 1;
-	font-weight: normal;
-}
-
 
 /* ==============================================================================
 	Shop / Archive page - pagination design.
@@ -438,9 +419,10 @@ ul.productsWrapper li.productsListRow .archiveProductSummery .price del::after {
 .customOrdering .woocommerce-ordering {
   position: relative;
   display: flex;
+  width: 15em;
   height: 3em;
   line-height: 3;
-  /*background: #2c3e50;*/
+  background: #2c3e50;
   overflow: hidden;
   border-radius: .25em;
 }
@@ -515,7 +497,7 @@ Shop page e categories show kore tar design
 #shopPageAjaxCategories img {
 	width: 90px;
 	height: auto;
-	margin-bottom: 6px;
+	margin-bottom: auto;
 }
 
 #shopPageAjaxCategories ul {
@@ -527,7 +509,7 @@ Shop page e categories show kore tar design
 #shopPageAjaxCategories ul.productsWrapper .product h2 {
 	font-size: 14px;
 	text-align: center;
-	font-weight: 700;
+	font-weight: 400;
 }
 
 #shopPageAjaxCategories li.product-category.product.first {
@@ -550,7 +532,6 @@ Shop page e categories show kore tar design
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	align-items: center;
 }
 
 #shopPageAjaxCategories a.active::before {
@@ -725,6 +706,42 @@ form.woocommerce-cart-form table.shop_table tbody {
 	width: 98%;
 }
 
+tr.woocommerce-cart-form__cart-item td.product-name dl dt,
+tr.woocommerce-cart-form__cart-item td.product-name dl dd,
+#order_review td.product-name dl dt,
+#order_review td.product-name dl dd {
+	/*width: 49.5%;*/
+	float: left;
+	font-weight: 300;
+	line-height: 20px;
+	font-size: 12px;
+	color: #212529;
+}
+
+tr.woocommerce-cart-form__cart-item td.product-name dl dt,
+#order_review td.product-name dl dt {	
+	clear: both;
+	width: 80%;
+}
+
+tr.woocommerce-cart-form__cart-item td.product-name dl dd,
+#order_review td.product-name dl dd {
+	margin-bottom: 0;
+	width: 20%;
+}
+
+tr.woocommerce-cart-form__cart-item td.product-name dl dd p,
+#order_review td.product-name dl dd p {
+	margin-bottom: 0;
+}
+
+tr.woocommerce-cart-form__cart-item td.product-name > a,
+#order_review td.product-name {
+	font-size: 18px;
+	font-weight: bold;
+	color: #862d2f;
+}
+
 @media (min-width: 768px) {
 	form.woocommerce-cart-form tr.woocommerce-cart-form__cart-item td {
 		vertical-align: middle;
@@ -766,13 +783,17 @@ form.woocommerce-cart-form table.shop_table tbody {
 
 
 /* ==============================================================================
-	Checkout Page
+	Checkout Page (ebong er moto form j jaigate ache tar design)
 ============================================================================== */
 form.checkout.woocommerce-checkout .woocommerce-billing-fields .form-row,
 form.checkout.woocommerce-checkout .woocommerce-shipping-fields .form-row {
 	flex-direction: column;
 	margin-right: 0;
 	margin-left: 0;
+}
+
+form.checkout.woocommerce-checkout #billing_address_2_field .optional {
+	display: none;
 }
 
 .billingWrapper, .shippingWrapper {
@@ -795,10 +816,6 @@ form.checkout.woocommerce-checkout .woocommerce-shipping-fields .form-row {
 #billing_address_2_field, #shipping_address_2_field,
 #billing_phone_field, #shipping_phone_field {
 	width: 49%;
-}
-
-#billing_address_2_field {
-	margin-top: 48px;
 }
 
 
@@ -859,6 +876,16 @@ form.checkout.woocommerce-checkout .select2-selection.select2-selection--single 
 #order_review.woocommerce-checkout-review-order table {
 	width: 100%;
 	margin-bottom: 25px;
+}
+
+#order_review.woocommerce-checkout-review-order table tr th:nth-child(1),
+#order_review.woocommerce-checkout-review-order table tr td:nth-child(1) {
+	width: 68%;
+}
+
+#order_review.woocommerce-checkout-review-order table tr th:nth-child(2),
+#order_review.woocommerce-checkout-review-order table tr td:nth-child(2) {
+	width: 32%;
 }
 
 #order_review.woocommerce-checkout-review-order table th,
@@ -937,8 +964,37 @@ form.checkout.woocommerce-checkout .select2-selection.select2-selection--single 
 	padding-bottom: 2px;
 }
 
+.woocommerce-order tbody tr.woocommerce-table__line-item.order_item .woocommerce-table__product-name.product-name > a,
+.woocommerce-order tbody tr.woocommerce-table__line-item.order_item .woocommerce-table__product-name.product-name > strong {
+	font-size: 20px;
+	color: #862d2f;
+	font-weight: 700;
+}
+
 .woocommerce-order .table.woocommerce-table.woocommerce-table--order-details.shop_table.order_details .theadWrapper {
 	background-color: #eeeded;
+}
+
+.woocommerce-order .table.woocommerce-table.woocommerce-table--order-details.shop_table.order_details .tbodyWrapper ul {
+	padding: 0;
+	margin-top: 5px;
+}
+
+.woocommerce-order .table.woocommerce-table.woocommerce-table--order-details.shop_table.order_details .tbodyWrapper ul li {
+	list-style: none;
+	display: flex;
+	line-height: 24px;
+	justify-content: flex-start;
+	color: #212529;
+	font-size: 14px;
+}
+
+.woocommerce-order .table.woocommerce-table.woocommerce-table--order-details.shop_table.order_details .tbodyWrapper ul li strong {
+	margin-right: 5px;
+}
+
+.woocommerce-order .table.woocommerce-table.woocommerce-table--order-details.shop_table.order_details .tbodyWrapper ul li p {
+	margin: 0;
 }
 
 
@@ -1063,6 +1119,83 @@ ul.order_details li strong {
 	color: #000;
 }
 
+/* Edit Address ................................................................. */
+form .woocommerce-address-fields .form-row {
+	flex-direction: column;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+form .woocommerce-address-fields .form-row #billing_country,
+form .woocommerce-address-fields .form-row #shipping_country {
+	width: 100%;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	padding-left: 10px;
+	height: 32px
+}
+
+form .woocommerce-address-fields .form-row#shipping_address_2_field {
+	margin-top: 48px;
+}
+
+form .woocommerce-address-fields button.button {
+	margin-left: 5px;
+	font-size: 15px;
+	line-height: 0px;
+	padding: 20px 12px;
+	border: none;
+	color: #fff;
+	background-color: #973B3D;
+	font-weight: 400;
+	border-radius: 50px;
+	height: 26px;
+}
+
+form .woocommerce-address-fields button.button:hover {
+	color: #fff;
+	background: #333;
+}
+
+/* Reset Password page (login panel e "lost your password?" a click korle ai page ase) .................................. */
+.woocommerce-ResetPassword.lost_reset_password {
+	margin-right: 20px;
+	margin-left: 20px;
+	text-align: center;
+}
+
+.woocommerce-ResetPassword.lost_reset_password .woocommerce-form-row.woocommerce-form-row--first.form-row.form-row-first {
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.woocommerce-ResetPassword.lost_reset_password .woocommerce-Button.button {
+	margin-left: 5px;
+	font-size: 15px;
+	line-height: 0px;
+	padding: 20px 12px;
+	border: none;
+	color: #fff;
+	background-color: #973B3D;
+	font-weight: 400;
+	border-radius: 50px;
+	height: 26px;
+	margin: 0 auto;
+}
+
+.woocommerce-ResetPassword.lost_reset_password .woocommerce-Button.button:hover {
+	color: #fff;
+	background: #333;
+}
+
+.woocommerce-ResetPassword.lost_reset_password #user_login {
+	width: 100%;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	padding-left: 10px;
+	height: 32px
+}
+
 /* Account Details ................................................................. */
 
 .myAccountWrapper .woocommerce-EditAccountForm p {
@@ -1091,9 +1224,7 @@ ul.order_details li strong {
 	padding-left: 0;
 	font-weight: bold;
 	color: #802121;
-	/*text-transform: uppercase;*/
 	font-size: 18px;
-	/* display: inline-block; */
 	margin: 0;
 }
 

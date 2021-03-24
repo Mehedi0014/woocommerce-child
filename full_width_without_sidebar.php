@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Full Width Without Sidebar
+ * Template Name: Full Width Without Sidebar For Child
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *

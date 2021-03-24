@@ -27,9 +27,9 @@ do_action( 'woocommerce_before_cart' ); ?>
 		<table class="table shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
 			<thead>
 				<tr>
-					<th class="oneOfSix text-md-center product-remove">Remove</th>
+					<th class="oneOfTwelve text-md-center product-remove">Remove</th>
 					<th class="oneOfSix text-md-center product-thumbnail">Image</th>
-					<th class="oneOfSix text-md-center product-name"><?php esc_html_e( 'Product', 'woocommerce' ); ?></th>
+					<th class="addOneOfSixAndOneOfTwelve text-md-center product-name"><?php esc_html_e( 'Product', 'woocommerce' ); ?></th>
 					<th class="oneOfSix text-md-center product-price"><?php esc_html_e( 'Price', 'woocommerce' ); ?></th>
 					<th class="oneOfSix text-md-center product-quantity"><?php esc_html_e( 'Quantity', 'woocommerce' ); ?></th>
 					<th class="oneOfSix text-md-center product-subtotal"><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></th>
@@ -48,7 +48,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 						?>
 						<tr class="woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
 
-							<td class="oneOfSix text-center product-remove">
+							<td class="oneOfTwelve text-center product-remove">
 								<?php
 									echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 										'woocommerce_cart_item_remove_link',
@@ -76,7 +76,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 								?>
 							</td>
 
-							<td class="oneOfSix text-md-center product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
+							<td class="addOneOfSixAndOneOfTwelve product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
 								<?php
 								if ( ! $product_permalink ) {
 									echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;' );

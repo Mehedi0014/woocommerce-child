@@ -61,33 +61,29 @@
 					 */
 					do_action( 'woocommerce_single_product_summary' );
 					?>
-				</div>
-			</div>
+				</div><!-- entry-summary -->
+			</div><!-- detailsPart -->
 		</div><!-- row -->
 
-				<?php
-					/**
-					 * Hook: woocommerce_after_single_product_summary.
-					 * @hooked woocommerce_output_product_data_tabs - 10
-					 * @hooked woocommerce_upsell_display - 15
-					 * @hooked woocommerce_output_related_products - 20
-					 */
-					/**
-					=====> ai part comment kore niche sudu related product show kora holo.
-					do_action( 'woocommerce_after_single_product_summary' );
-					*/
-				?>
+		<?php
+			/**
+			 * Hook: woocommerce_after_single_product_summary.
+			 * @hooked woocommerce_output_product_data_tabs - 10
+			 * @hooked woocommerce_upsell_display - 15
+			 * @hooked woocommerce_output_related_products - 20
+			 */
+			/**
+			=====> ai part comment kore niche sudu related product show kora holo.
+			do_action( 'woocommerce_after_single_product_summary' );
+			*/
+		?>
 		<div id="relatedProductsWrapper" class="row mt-5">
 			<div class="col-12 mt-4 text-center">
 				<?php echo woocommerce_upsell_display(); ?>
 			</div>
-		</div>
-
-
-
-
+		</div><!-- relatedProductsWrapper -->
 		
 	</div> <!-- container -->
-</div>
+</div> <!-- product-<?php the_ID(); ?> -->
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>

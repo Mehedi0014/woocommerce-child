@@ -20,6 +20,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+
+?>
+<div class="container breadcrumbContainer">
+<?php
+
 if ( ! empty( $breadcrumb ) ) {
 
 	echo $wrap_before;
@@ -44,3 +49,6 @@ if ( ! empty( $breadcrumb ) ) {
 	echo $wrap_after;
 
 }
+?>
+</div> <!-- close breadcrumbContainer	 -->
+<?php

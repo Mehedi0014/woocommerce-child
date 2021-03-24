@@ -162,8 +162,8 @@ get_header( 'shop' );
 	</div>
 </div>
 
+
 <?php
 get_footer( 'shop' );
-
 
 
