@@ -51,4 +51,3 @@ if ( ! empty( $breadcrumb ) ) {
 }
 ?>
 </div> <!-- close breadcrumbContainer	 -->
-<?php
