@@ -271,6 +271,8 @@ ul.productsWrapper .product h2 {
 	padding: 0;
 	overflow: hidden;
 	color: #333;
+	text-align: center;
+	margin-top: 12px;
 }
 
 @media (min-width: 48em){
@@ -282,6 +284,7 @@ ul.productsWrapper .product h2 {
 ul.productsWrapper li.productsListRow .woocommerce-product-details__short-description {
 	font-size: 15px;
 	color: #666;
+	text-align: center;
 }
 
 ul.productsWrapper li.productsListRow .price {
@@ -289,6 +292,8 @@ ul.productsWrapper li.productsListRow .price {
 	font-weight: bold;
 	color: #862d2f;
 	margin-bottom: 14px;
+	display: block;
+	text-align: center;
 }
 
 ul.productsWrapper li.productsListRow img {
@@ -296,6 +301,8 @@ ul.productsWrapper li.productsListRow img {
 	padding: 4px;
 	border-radius: 6px;
 	position: relative;
+	max-width: 100%;
+	height: auto;
 }
 
 ul.productsWrapper li.productsListRow > a.woocommerce-LoopProduct-link .onsale {
@@ -1359,44 +1366,3 @@ form #phoen_apply_gift_coupon_val{
 	border: none;
 	font-size: 14px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
