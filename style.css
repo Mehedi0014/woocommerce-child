@@ -826,6 +826,11 @@ form.checkout.woocommerce-checkout #billing_address_2_field .optional {
 }
 
 
+#billing_address_2_field {
+	margin-top: 48px;
+}
+
+
 input#billing_first_name, input#shipping_first_name,
 input#billing_last_name, input#shipping_last_name,
 input#billing_company, input#shipping_company,
