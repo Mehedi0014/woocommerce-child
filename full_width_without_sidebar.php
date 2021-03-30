@@ -23,7 +23,11 @@ get_header();
 					<?php //the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</header><!-- .entry-header -->
 
-				<?php mone_post_thumbnail(); ?>
+				<?php
+					if ( has_post_thumbnail() ) {
+						the_post_thumbnail();
+					}
+				?>
 
 				<div class="entry-content">
 					<?php
