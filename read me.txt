@@ -1,0 +1,1 @@
+For My Account page select: full_width_without_sidebar.php
