@@ -76,7 +76,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 								?>
 							</td>
 
-							<td class="addOneOfSixAndOneOfTwelve product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
+							<td class="addOneOfSixAndOneOfTwelve text-md-center product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
 								<?php
 								if ( ! $product_permalink ) {
 									echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;' );
@@ -143,8 +143,8 @@ do_action( 'woocommerce_before_cart' ); ?>
 					<td colspan="6" class="pt-4">
 						<div id="updateAndReturnShop" class="row">
 							<div class="col-md-6 text-center text-md-left">
-								<button class="ct_btnTwo text-uppercase">
-									<a href="<?php echo esc_url(home_url('/')); ?>/shop/">Continue Ordering</a>
+								<button class="ct_btnOne text-uppercase">
+									<i class="fa fa-angle-double-left"></i> <a href="<?php echo esc_url(home_url('/')); ?>/shop/">Continue Ordering</a>
 								</button>
 							</div>
 							<div class="col-md-6 text-center text-md-right mt-2 mt-md-0">
@@ -171,7 +171,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 							<input type="text" name="coupon_code" class="input-text form-control" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Your Coupon...', 'woocommerce' ); ?>" />
 						</div>
 						<!-- <button type="submit" class="ct_btnTwo">Apply Coupon</button> -->
-						<button type="submit" class="ct_btnTwo button" name="apply_coupon" value="<?php esc_attr_e( 'Apply Coupon', 'woocommerce' ); ?>"><?php esc_attr_e( 'Apply Coupon', 'woocommerce' ); ?></button>
+						<button type="submit" class="ct_btnOne button" name="apply_coupon" value="<?php esc_attr_e( 'Apply Coupon', 'woocommerce' ); ?>"><?php esc_attr_e( 'Apply Coupon', 'woocommerce' ); ?></button>
 					</div>
 				</div>
 			</div>

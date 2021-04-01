@@ -1,10 +1,10 @@
 /*
- Theme Name:	mOne Child
+ Theme Name:	Desing World Child
  Theme URI:		http://underscores.me/
- Description:	mOne Child Theme
+ Description:	desing_world Child Theme
  Author:		Md. Mehedi Hassan
  Author URI:	https://www.facebook.com/mehedi0013/
- Template:		mone
+ Template:		desing_world
  Version:		1.0.0
 */
 
@@ -68,7 +68,63 @@ p.no-comments .button {
 
 /* End Displaying variout type of message ================================== */
 
+.fa {
+	line-height: 0;
+}
 
+
+.ct_btnOne {
+	color: #fff;
+	background-color: #2366CE;
+	line-height: 0;
+	padding: 18px 22px;
+	border-radius: 50px;
+	font-weight: bold;
+	display: inline;
+	transition: all .5s;
+	text-decoration: none;
+	border: 2px solid #2366CE;
+}
+
+.ct_btnOne a {
+	color: #fff;
+}
+
+.ct_btnOne:hover,
+.ct_btnOne:hover a {
+	color: #333;
+	background: transparent;
+	text-decoration: none;
+}
+
+
+
+
+
+
+.ct_btnTwo {
+	color: #fff;
+	background-color: #862D2F;
+	line-height: 0;
+	padding: 18px 22px;
+	border-radius: 50px;
+	font-weight: bold;
+	display: inline;
+	transition: all .5s;
+	text-decoration: none;
+	border: 2px solid #862D2F;
+}
+
+.ct_btnTwo a {
+	color: #fff;
+}
+
+.ct_btnTwo:hover,
+.ct_btnTwo:hover a {
+	color: #333;
+	background: transparent;
+	text-decoration: none;
+}
 
 /* ==============================================================================
 	Single Product Page
@@ -333,11 +389,14 @@ ul.productsWrapper li.productsListRow .archiveAddToCart a.button {
 	font-weight: bold;
 	display: inline;
 	transition: all .5s;
+	text-decoration: none;
+	border: 2px solid #862D2F;
+	line-height: 0;
 }
 
 ul.productsWrapper li.productsListRow .archiveAddToCart a.button:hover {
-	color: #fff;
-	background-color: #333;
+	color: #333;
+	background-color: #fff;
 }
 
 ul.productsWrapper li.productsListRow .archiveAddToCart a.added_to_cart.wc-forward {
@@ -345,11 +404,13 @@ ul.productsWrapper li.productsListRow .archiveAddToCart a.added_to_cart.wc-forwa
 	left: 50%;
 	transform: translateX(-50%);
 	color: #fff;
-	background: #461415;
+	background: cadetblue;
 	font-weight: bold;
-	padding: 4px 20px;
-	top: -3px;
+	padding: 20px 32px;
+	top: -8px;
 	border-radius: 50px;
+	text-decoration: none;
+	line-height: 0;
 }
 
 ul.productsWrapper li.productsListRow .price del {
@@ -665,20 +726,20 @@ form.woocommerce-cart-form .fa.fa-trash-o {
 	color: #ca0808;
 }
 
-form.woocommerce-cart-form .ct_btnTwo {
+/*form.woocommerce-cart-form .ct_btnTwo {
 	font-size: 15px;
 	line-height: 0px;
 	padding: 20px 12px;
 	border: none;
-}
+}*/
 
-form.woocommerce-cart-form .ct_btnTwo > a {
+/*form.woocommerce-cart-form .ct_btnTwo > a {
 	color: #fff;
 }
 
 form.woocommerce-cart-form .ct_btnTwo a:hover {
 	color: #fff !important;
-}
+}*/
 
 form.woocommerce-cart-form .couponForm {
 	background: #eeeded
