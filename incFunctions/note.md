@@ -1,6 +1,6 @@
 <?php
 	/**
-	 * Enqueue scripts and styles.
+	 ===> Enqueue scripts and styles.
 	 */
 	'enqueueScriptsAndStyles.php'
 	/**
@@ -10,10 +10,15 @@
 	/**
 	 ===> Repalce single page short description
 	*/
-	'repalceSinglePageShortDescription.php'
+	'repalceSinglePageShortDescription.php'	
 	/**
-	 ===> Change Number of Related Products
-	 */
+	===> Remove sale flash in archive page
+	*/
+    'removeSaleFlashInArchivePage.php'	
+	/**
+	 ===> Change Number of Related Products	 
+	*/
+	 
 	'changeNumberOfRelatedProducts.php'
 	 /**
 	  ===> Change Related Products Heading, with adding the product name
@@ -77,11 +82,19 @@
 	 */
 	'showCartTotleInAjax.php'
 	/**
-	 ===> Change the breadcrumb separator ============================================
+	 ===> Change the breadcrumb separator
 	 */
  	'changeTheBreadcrumbSeparator.php'
 	/**
-	 ===> Rename "My Account" If Logged Out @ Nav Menu ===============================
+	 ===> Rename "My Account" If Logged Out @ Nav Menu
 	*/ 
-  	'renameMyAccountIfLogout.php'
+  	'renameMyAccountIfLogout.php'	
+	/**
+	 ===> Remove default add to cart and create custom add to cart button
+	*/
+	'removeDefaultAddToCartAndMakeCustomAddToCart.php'	
+	/**
+	===> Remove cross-sells at cart page
+	*/ 
+	// remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display' );
 
