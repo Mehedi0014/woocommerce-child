@@ -6,6 +6,18 @@
 
 
 	/** .............................................................................................................
+	===> Add container or container-fluid or any tag for which wrapped all archive page.
+	*/
+	require_once( get_stylesheet_directory() . '/incFunctions/addContainerForWrappingArchivePage.php');
+
+
+	/** .............................................................................................................
+	===> Customize image size in shop page, single page, gallery image etc
+	*/
+	require_once( get_stylesheet_directory() . '/incFunctions/customizeImageSizeForDifferentPage.php');
+
+
+	/** .............................................................................................................
 	  ===> Add plus and minus quantity buttons in Woocommerce
 	 */		
 	// require_once( get_stylesheet_directory() . '/incFunctions/addPlusAndMinusQuantityButtons.php');
@@ -24,9 +36,18 @@
 
 
 	/** .............................................................................................................
-	 ===> Change Number of Related Products
+	 ===> Change Number of Upsale/related Products
 	 */
-	// require_once( get_stylesheet_directory() . '/incFunctions/changeNumberOfRelatedProducts.php');
+	require_once( get_stylesheet_directory() . '/incFunctions/changeNumberOfRelatedProducts.php');
+
+
+
+
+
+	/** .............................................................................................................
+	 ===> Change "You may also like..." In upsell products / Related Products
+	 */
+	// require_once( get_stylesheet_directory() . '/incFunctions/changeYouMayAlsoLikeInUpsellProduct.php');
 
 
 	 /** .............................................................................................................
@@ -36,9 +57,9 @@
 
 
 	/** .............................................................................................................
-	 ===> Change "You may also like..." In upsell products
-	 */
-	// require_once( get_stylesheet_directory() . '/incFunctions/changeYouMayAlsoLikeInUpsellProduct.php');
+	===> Remove cross-sells at cart page
+	*/
+	// remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display' );
 
 
 	/** .............................................................................................................
@@ -132,8 +153,15 @@
 	// require_once( get_stylesheet_directory() . '/incFunctions/removeDefaultAddToCartAndMakeCustomAddToCart.php');
 
 	
-	
+
+
+
+
 	/** .............................................................................................................
-	===> Remove cross-sells at cart page
-	*/ 
-	// remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display' );
+	 ===> by default woocommerce cross sell is only showing two random products on cart page.
+	 ===> Show all cross sell porducts
+	*/	
+	// add_filter('woocommerce_cross_sells_total', 'showAllCrossSellProducts');
+	function showAllCrossSellProducts() {
+	    return -1;
+	}

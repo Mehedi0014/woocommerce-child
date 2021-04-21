@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 ?>
-<div class="container breadcrumbContainer">
+<div class="breadcrumbContainer">
 <?php
 
 if ( ! empty( $breadcrumb ) ) {
@@ -50,4 +50,4 @@ if ( ! empty( $breadcrumb ) ) {
 
 }
 ?>
-</div> <!-- close breadcrumbContainer	 -->
+</div>

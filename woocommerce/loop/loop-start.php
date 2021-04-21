@@ -15,8 +15,27 @@
  * @version     3.3.0
  */
 
+/*
+* Help Tips for this template modification.
+* <ul class="productsListRow products columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>">
+* uporer line k bad dia, bootstrap er gird add korer jonno, div tag use kora hoyeche. nicher moto.
+* <div class="row mt-4 productsListRow products columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>">
+* ebong ul close tag [loop -> loop-end.php] and li [woocommerce -> content-product.php] file e
+* 
+* 
+* if else, babohar kora hoyeche jate kore shop page e ac rokom grid o onno jaigate jemon up-sell, cross-sell, related product etc te onno rokomer grid chaile amra use korte pari.
+*/
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-<ul class="products productsWrapper columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>">
+
+
+<?php if ( is_shop() ) : ?>
+	<div class="row mt-4 productsListRow products columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>">
+<?php else : ?>
+	<div class="row mt-4 productsListRow products columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>">
+<?php endif ?>
+
+

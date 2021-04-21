@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-	<main id="myAccount" class="myAccount mt-5 mb-5">
+	<main id="displayWcPageOne" class="displayWcPageOne mt-5 mb-5">
 
 		<?php
 		while ( have_posts() ) :
