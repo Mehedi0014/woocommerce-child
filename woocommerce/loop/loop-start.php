@@ -33,9 +33,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 <?php if ( is_shop() ) : ?>
-	<div class="row mt-4 productsListRow products columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>">
+	<div class="row mt-3 productsListRow products columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>">
 <?php else : ?>
-	<div class="row mt-4 productsListRow products columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>">
+	<div class="row mt-3 productsListRow products columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>">
 <?php endif ?>
 
 

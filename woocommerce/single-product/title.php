@@ -15,8 +15,13 @@
  * @version    1.6.4
  */
 
+/*
+* Help Tips:
+* Ai file ti modify kora hoyeche.
+*/
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-the_title( '<h1 class="product_title entry-title">', '</h1>' );
+the_title( '<h1 class="product_title entry-title font-weight-bold">', '</h1>' );

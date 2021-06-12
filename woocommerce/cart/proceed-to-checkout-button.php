@@ -17,6 +17,11 @@
  * @version 2.4.0
  */
 
+/**
+* Help Tips:
+* Ai file ti modify kora hoyeche.
+*/
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }

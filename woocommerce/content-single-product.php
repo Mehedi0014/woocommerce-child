@@ -14,6 +14,11 @@
  * @package WooCommerce\Templates
  * @version 3.6.0
  */
+
+/*
+* Help Tips:
+* Ai file ti modify kora hoyeche.
+*/
 ?>
 
 <?php		
@@ -77,6 +82,13 @@
 			do_action( 'woocommerce_after_single_product_summary' );
 			*/
 		?>
+		<div id="additionalInformationWrapper" class="row mt-5">
+			<div class="col-12 mt-4">
+				<?php echo woocommerce_output_product_data_tabs(); ?>
+			</div>
+		</div><!-- additionalInformationWrapper -->
+
+
 		<div id="relatedProductsWrapper" class="row mt-5">
 			<div class="col-12 mt-4 text-center">
 				<?php echo woocommerce_upsell_display(); ?>

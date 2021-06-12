@@ -41,9 +41,6 @@
 	require_once( get_stylesheet_directory() . '/incFunctions/changeNumberOfRelatedProducts.php');
 
 
-
-
-
 	/** .............................................................................................................
 	 ===> Change "You may also like..." In upsell products / Related Products
 	 */
@@ -101,7 +98,7 @@
 	/** .............................................................................................................
 	===> Remove default pagination and make a new one for archive page
 	*/
-	// require_once( get_stylesheet_directory() . '/incFunctions/removeDefaultPaginationAndMakeANewOne.php');
+	require_once( get_stylesheet_directory() . '/incFunctions/removeDefaultPaginationAndMakeANewOne.php');
 
 
 	/** .............................................................................................................
@@ -138,7 +135,7 @@
 	/** .............................................................................................................
 	 ===> Change the breadcrumb separator
 	 */
- 	// require_once( get_stylesheet_directory() . '/incFunctions/changeTheBreadcrumbSeparator.php');
+ 	require_once( get_stylesheet_directory() . '/incFunctions/changeTheBreadcrumbSeparator.php');
 
  	
 	/** .............................................................................................................
@@ -152,16 +149,53 @@
 	*/
 	// require_once( get_stylesheet_directory() . '/incFunctions/removeDefaultAddToCartAndMakeCustomAddToCart.php');
 
-	
-
 
 
 
 	/** .............................................................................................................
 	 ===> by default woocommerce cross sell is only showing two random products on cart page.
 	 ===> Show all cross sell porducts
-	*/	
-	// add_filter('woocommerce_cross_sells_total', 'showAllCrossSellProducts');
-	function showAllCrossSellProducts() {
-	    return -1;
-	}
+	*/
+	// require_once( get_stylesheet_directory() . '/incFunctions/showAllCrossSellProducts.php');
+
+
+
+	/** .............................................................................................................
+	===> forcefully auto selected Bulling details field like cart page address filed information. 
+	*/
+	// require_once( get_stylesheet_directory() . '/incFunctions/forcefullySelectedBullingStateLikeCartState.php');
+
+
+
+
+	/** .............................................................................................................
+	===> https://wordpress.org/support/topic/country-billing-not-showing-up-in-the-order-received-thank-you-page/
+
+	===> Due to base country and billing or shipping country are same, country aren't show in cart page shipping to area. Forcefully Display it
+	==============================================================================
+	*/
+
+	// add_filter( 'woocommerce_formatted_address_force_country_display', '__return_true' );
+
+
+
+
+	/** .............................................................................................................
+	===> cart, checkout, order/thank you etc page e -  bivainno deser address bivinno base show hoy. jemon germany te state show hoy na. address custom vabe show korer jonno.
+	*/
+
+	// require_once( get_stylesheet_directory() . '/incFunctions/showCustomAddressInDifferentPageLinkeCartCheckoutEtc.php');
+
+
+
+
+ 	/** .............................................................................................................
+	===> Remove default star rating and make a custom star rating for shop/archive page.
+	*/
+	require_once( get_stylesheet_directory() . '/incFunctions/removeAndAddCustomStarRatingForArchivePage.php');
+
+
+	/** .............................................................................................................
+	===> Replace breadcrumb one place to another place.
+	*/
+	require_once( get_stylesheet_directory() . '/incFunctions/replaceBreadcrumbOnePlaceToAnotherPlace.php');

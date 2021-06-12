@@ -15,6 +15,10 @@
  * @version 3.4.0
  */
 
+/*
+* Help Tips:
+* Ai file ti modify kora hoyeche.
+*/
 defined( 'ABSPATH' ) || exit;
 
 get_header( 'shop' );
@@ -35,12 +39,13 @@ get_header( 'shop' );
 
 		?>
 
-		<div class="row archivePagePageTitle">
+		<div class="row mt-4 archivePagePageTitle">
 			<div class="col-12">
+				
 				<header class="woocommerce-products-header">
-					<?php if ( apply_filters( 'woocommerce_show_page_title', false ) ) : ?>
+					<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 						<!-- upore if condition false kora hoyeche jate kore title show na kore. show korte chile true korte hobe -->
-						<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
+						<h1 class="woocommerce-products-header__title page-title text-center font-weight-bold text-uppercase"><?php woocommerce_page_title(); ?></h1>
 					<?php endif; ?>
 
 					<?php
@@ -57,17 +62,18 @@ get_header( 'shop' );
 		</div>
 
 
-
-		<?php if(is_product_category() ) : ?>
+		<!-- This section show category title -->
+		<!-- 
+		<?php // if(is_product_category() ) : ?>
 			<div class="col-12 categoryTitle text-center">
 				<h2 class="text-uppercase d-table m-auto font-weight-bold ct-colorTwo">
 					<?php
-						single_cat_title( __( '', 'textdomain' ) );
+						// single_cat_title( __( '', 'textdomain' ) );
 					?>
 				</h2>
 			</div>
-		<?php endif; ?>
-		
+		<?php // endif; ?>
+		 -->
 			
 		<?php
 			//if ( woocommerce_product_loop() ) {
@@ -87,13 +93,19 @@ get_header( 'shop' );
 		<div class="row showingResultAndShorting">
 			<div class="col-12">
 				<?php echo woocommerce_output_all_notices(); ?>
-			</div>			
-			<div class="showingResultNumber col-md-4">
-				<?php echo woocommerce_result_count(); ?>
 			</div>
-			<div class="customOrdering col-md-4 offset-md-4 d-flex justify-content-end">
-				<div class="sortBy mr-2">Sort By :</div>
-				<?php echo woocommerce_catalog_ordering(); ?>					
+			<div class="col-12">
+				<div class="showResultAndProductOrder px-3">
+					<div class="row">
+						<div class="showingResultNumber col-md-6 text-center text-md-left">
+							<?php echo woocommerce_result_count(); ?>
+						</div>
+						<div class="customOrdering col-md-6 d-flex justify-content-center justify-content-md-end">
+							<div class="sortBy mr-2">Sort By :</div>
+							<?php echo woocommerce_catalog_ordering(); ?>					
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 

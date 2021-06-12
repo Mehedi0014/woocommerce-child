@@ -15,6 +15,11 @@
  * @version 4.0.0
  */
 
+/**
+* Help Tips:
+* Ai file ti modify kora hoyeche.
+*/
+
 defined( 'ABSPATH' ) || exit;
 
 do_action( 'woocommerce_before_shipping_calculator' ); ?>

@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 ?>
-<div class="breadcrumbContainer">
+<div class="breadcrumbContainer container">
 <?php
 
 if ( ! empty( $breadcrumb ) ) {

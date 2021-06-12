@@ -15,6 +15,11 @@
  * @version 3.5.0
  */
 
+/**
+* Help Tips:
+* Ai file ti modify kora hoyeche.
+*/
+
 defined( 'ABSPATH' ) || exit;
 
 /*

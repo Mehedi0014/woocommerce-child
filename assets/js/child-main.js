@@ -10,7 +10,7 @@ $(document).ready(function() {
         margin: 0,
         nav: 0,
         dots: 0,
-        items: 3,
+        items: 4,
         lazyLoad: 1,
         margin: 0
     });
