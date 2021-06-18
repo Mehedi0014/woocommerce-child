@@ -1,4 +1,4 @@
-Change the comments:
+Change the comments in child theme style.css file:
 
 /*
  Theme Name:	desing_world Child
@@ -13,6 +13,7 @@ Change the comments:
 
 +++++++++++++++++++++++++++++================================
 +++++++++++++++++++++++++++++================================
+Go to admin panel and:
 
 My Account page select:     full_width_without_sidebar.php
 Cart page select:           full_width_without_sidebar.php
