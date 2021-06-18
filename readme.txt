@@ -15,6 +15,6 @@ Change the comments in child theme style.css file:
 +++++++++++++++++++++++++++++================================
 Go to admin panel and:
 
-My Account page select:     full_width_without_sidebar.php
-Cart page select:           full_width_without_sidebar.php
-Checkout page select:       full_width_without_sidebar.php
+My Account page select:     Full Width Without Sidebar For Child.php
+Cart page select:           Full Width Without Sidebar For Child.php
+Checkout page select:       Full Width Without Sidebar For Child.php
