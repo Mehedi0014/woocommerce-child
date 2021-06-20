@@ -10,6 +10,12 @@ Change the comments in child theme style.css file:
  Version:		1.0.0
 */
 
++++++++++++++++++++++++++++++================================
++++++++++++++++++++++++++++++================================
+
+If you using _s theme, then go to the following path
+xampp\htdocs\your_xampp_folder_name\wp-content\themes\your_theme_name\woocommerce.css
+then rename or delete it. because this file css already copy in child theme style.css
 
 +++++++++++++++++++++++++++++================================
 +++++++++++++++++++++++++++++================================
